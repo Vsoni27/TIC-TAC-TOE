@@ -21,7 +21,7 @@ import {useMoralis} from "react-moralis";
 function App() {
 
   const[isConnected, setIsConnected] = useState(false);
-  const [waiting, setwaiting] = useState(false);
+  const [roomID, setroomID] = useState("");
   const {account} = useMoralis()
 
 
@@ -42,8 +42,8 @@ function App() {
       <Header />
       <h3>{account}</h3>
       {!isConnected && <HomePage/>}
-      {waiting && <WaitingScreen />}
-      {!waiting && <GamePage/>}
+      {(roomID === "") && <WaitingScreen />}
+      {(roomID !== "" )&& <GamePage/>}
     </div>
   )
 }
