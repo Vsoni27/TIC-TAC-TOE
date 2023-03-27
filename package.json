@@ -14,9 +14,13 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/lab": "^5.0.0-alpha.124",
     "@mui/material": "^5.11.14",
+    "ethers": "^5.7.1",
+    "moralis": "^2.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "socket.io-client": "^4.6.1"
+    "react-moralis": "^1.4.2",
+    "socket.io-client": "^4.6.1",
+    "web3uikit": "^1.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
